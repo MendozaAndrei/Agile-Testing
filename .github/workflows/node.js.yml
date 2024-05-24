@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx prisma db pull --force
+    - run: npx prisma migrate dev
     - run: npm install @editorjs/editorjs
     - run: npm test
