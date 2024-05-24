@@ -30,4 +30,5 @@ jobs:
     - run: npm run build --if-present
     - run: npm install
     - run: npx prisma db pull --force
+    - run: npm install @editorjs/editorjs
     - run: npm test
